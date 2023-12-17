@@ -8,9 +8,11 @@ import {Routes,Route} from 'react-router-dom';
 import HomePage from './Pages/HomePage'
 import UploadPage from './Pages/UploadPage'
 import CreateCapsuleForm from './Pages/CreateCapsuleForm'
+import SuccessPage from './Pages/SucessPage'
 
 
-
+import Signup from './Pages/Auth/Signup'
+import Login from './Pages/Auth/Login'
 // Create a WebGLRenderer and add it to the DOM
 
 
@@ -23,6 +25,10 @@ function App() {
       <Route path='/Test'element={<Test/>}/>
       <Route path='/'element={<HomePage/>}/>
       <Route path='/Upload'element={<><CreateCapsuleForm/></>}/>
+      <Route path='/Sucess'element={<SuccessPage/>}/>
+      <Route path='/Signup'element={<Signup/>}/>
+      <Route path='/Login'element={<Login/>}/>
+
       </Routes>
     </>
   )

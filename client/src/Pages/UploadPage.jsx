@@ -34,7 +34,13 @@ const CloudinaryWidget = ({ handleFileUpload }) => {
 
   return (
     <div>
-      <button onClick={openWidget}>Upload Files</button>
+     <button
+          onClick={openWidget}
+          className="mt-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+          type="button"
+        >
+          Upload Files
+        </button>
     </div>
   );
 };
