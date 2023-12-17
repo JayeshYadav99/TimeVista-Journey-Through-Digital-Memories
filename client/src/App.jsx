@@ -10,9 +10,11 @@ import UploadPage from './Pages/UploadPage'
 import CreateCapsuleForm from './Pages/CreateCapsuleForm'
 import SuccessPage from './Pages/SucessPage'
 
-
+import GalleryPage from './Pages/GalleryPage'
 import Signup from './Pages/Auth/Signup'
 import Login from './Pages/Auth/Login'
+import UpcomingDatesPage from './Pages/Upcoming'
+import CapsuleDetailPage from './Pages/CapsuleDetailPage'
 // Create a WebGLRenderer and add it to the DOM
 
 
@@ -25,9 +27,12 @@ function App() {
       <Route path='/Test'element={<Test/>}/>
       <Route path='/'element={<HomePage/>}/>
       <Route path='/Upload'element={<><CreateCapsuleForm/></>}/>
-      <Route path='/Sucess'element={<SuccessPage/>}/>
+      <Route path='/Success'element={<SuccessPage/>}/>
       <Route path='/Signup'element={<Signup/>}/>
       <Route path='/Login'element={<Login/>}/>
+      <Route path='/Gallery'element={<GalleryPage/>}/>
+      <Route path='/Upcoming'element={<UpcomingDatesPage/>}/>
+      <Route path="/Gallery/:capsuleId" element={<CapsuleDetailPage />} />
 
       </Routes>
     </>

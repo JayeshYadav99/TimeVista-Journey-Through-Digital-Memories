@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB (make sure your MongoDB server is running)
-mongoose.connect('mongodb+srv://Jazzy49:MyNodeApp@nodeprojects.tsxlcqi.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://Jazzy49:MyNodeApp@nodeprojects.tsxlcqi.mongodb.net/TimeCapsule?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Middleware to parse JSON requests
 app.use(express.json());
